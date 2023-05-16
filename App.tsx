@@ -47,7 +47,7 @@ const MapScreen = () => {
                 latitudeDelta: 0.815,
                 longitudeDelta: 0.8121,
               }
-            : null
+            : undefined
         }>
         {location && (
           <Marker
@@ -74,7 +74,7 @@ export default MapScreen;
 const styles = StyleSheet.create({
   map: {
     height: 400,
-    width: '100%'
+    width: '100%',
   },
   mapText: {
     alignSelf: 'center',
